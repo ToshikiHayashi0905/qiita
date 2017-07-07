@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A5F691E1EF5063D007FA90A /* button-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5F691D1EF5063D007FA90A /* button-back.png */; };
+		9A5F69281EF53662007FA90A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5F69271EF53662007FA90A /* LoadingView.swift */; };
+		9A5F692C1EF54115007FA90A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5F692A1EF54115007FA90A /* Alamofire.framework */; };
+		9A5F692D1EF54115007FA90A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5F692B1EF54115007FA90A /* SwiftyJSON.framework */; };
+		9A7BFED81F0FDA8B009D8CDF /* GlobalClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BFED71F0FDA8B009D8CDF /* GlobalClass.swift */; };
+		9A7BFEDA1F0FDB03009D8CDF /* GlobalClass+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BFED91F0FDB03009D8CDF /* GlobalClass+Alert.swift */; };
+		9ABCDA1A1F07BB530020C66A /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCDA191F07BB530020C66A /* NetworkConnection.swift */; };
+		9ABCDA231F07BB800020C66A /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCDA201F07BB800020C66A /* MyCell.swift */; };
+		9ABCDA241F07BB800020C66A /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCDA211F07BB800020C66A /* MyWebView.swift */; };
+		9ABCDA271F07BBDF0020C66A /* qiitaApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCDA261F07BBDF0020C66A /* qiitaApiModel.swift */; };
+		9ABCDA441F07D35B0020C66A /* FavoriteEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCDA401F07D35B0020C66A /* FavoriteEntity+CoreDataProperties.swift */; };
+		9ABCDA451F07D35B0020C66A /* FavoriteEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCDA411F07D35B0020C66A /* FavoriteEntity.swift */; };
+		9ABCDA461F07D35B0020C66A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCDA421F07D35B0020C66A /* Model.xcdatamodeld */; };
+		9ABCDA481F07D37E0020C66A /* FavoriteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABCDA471F07D37E0020C66A /* FavoriteDataManager.swift */; };
+		9AD7AA1D1EF678E800D44CFF /* Ji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD7AA1C1EF678E800D44CFF /* Ji.framework */; };
+		9AE93E421EED76ED00A5C2C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE93E411EED76ED00A5C2C4 /* AppDelegate.swift */; };
+		9AE93E471EED76ED00A5C2C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE93E451EED76ED00A5C2C4 /* Main.storyboard */; };
+		9AE93E491EED76ED00A5C2C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE93E481EED76ED00A5C2C4 /* Assets.xcassets */; };
+		9AE93E4C1EED76EE00A5C2C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE93E4A1EED76EE00A5C2C4 /* LaunchScreen.storyboard */; };
+		9AFAD0B01F08BBDB00689338 /* FavoriteListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAD0AD1F08BBDB00689338 /* FavoriteListVC.swift */; };
+		9AFAD0B11F08BBDB00689338 /* QiitaListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAD0AF1F08BBDB00689338 /* QiitaListVC.swift */; };
+		9AFAD0B31F08BBED00689338 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAD0B21F08BBED00689338 /* ListVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A5F691D1EF5063D007FA90A /* button-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-back.png"; sourceTree = "<group>"; };
+		9A5F69271EF53662007FA90A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		9A5F692A1EF54115007FA90A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		9A5F692B1EF54115007FA90A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		9A7BFED71F0FDA8B009D8CDF /* GlobalClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalClass.swift; sourceTree = "<group>"; };
+		9A7BFED91F0FDB03009D8CDF /* GlobalClass+Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GlobalClass+Alert.swift"; sourceTree = "<group>"; };
+		9ABCDA191F07BB530020C66A /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		9ABCDA201F07BB800020C66A /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		9ABCDA211F07BB800020C66A /* MyWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
+		9ABCDA261F07BBDF0020C66A /* qiitaApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = qiitaApiModel.swift; sourceTree = "<group>"; };
+		9ABCDA401F07D35B0020C66A /* FavoriteEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FavoriteEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9ABCDA411F07D35B0020C66A /* FavoriteEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteEntity.swift; sourceTree = "<group>"; };
+		9ABCDA431F07D35B0020C66A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9ABCDA471F07D37E0020C66A /* FavoriteDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteDataManager.swift; sourceTree = "<group>"; };
+		9AD7AA1A1EF678D100D44CFF /* Ji.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Ji.framework.dSYM; path = Carthage/Build/iOS/Ji.framework.dSYM; sourceTree = "<group>"; };
+		9AD7AA1C1EF678E800D44CFF /* Ji.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ji.framework; path = Carthage/Build/iOS/Ji.framework; sourceTree = "<group>"; };
+		9AE93E3E1EED76ED00A5C2C4 /* qiitaReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiitaReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE93E411EED76ED00A5C2C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AE93E461EED76ED00A5C2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AE93E481EED76ED00A5C2C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AE93E4B1EED76EE00A5C2C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AE93E4D1EED76EE00A5C2C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AFAD0AD1F08BBDB00689338 /* FavoriteListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteListVC.swift; sourceTree = "<group>"; };
+		9AFAD0AF1F08BBDB00689338 /* QiitaListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QiitaListVC.swift; sourceTree = "<group>"; };
+		9AFAD0B21F08BBED00689338 /* ListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AE93E3B1EED76ED00A5C2C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD7AA1D1EF678E800D44CFF /* Ji.framework in Frameworks */,
+				9A5F692C1EF54115007FA90A /* Alamofire.framework in Frameworks */,
+				9A5F692D1EF54115007FA90A /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A5F691C1EF5063D007FA90A /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				9A5F691D1EF5063D007FA90A /* button-back.png */,
+			);
+			path = Resouces;
+			sourceTree = SOURCE_ROOT;
+		};
+		9A5F69291EF54114007FA90A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AD7AA1C1EF678E800D44CFF /* Ji.framework */,
+				9AD7AA1A1EF678D100D44CFF /* Ji.framework.dSYM */,
+				9A5F692A1EF54115007FA90A /* Alamofire.framework */,
+				9A5F692B1EF54115007FA90A /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A7BFED51F0FDA6C009D8CDF /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				9A7BFED71F0FDA8B009D8CDF /* GlobalClass.swift */,
+				9A7BFED61F0FDA6C009D8CDF /* Alert */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		9A7BFED61F0FDA6C009D8CDF /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				9A7BFED91F0FDB03009D8CDF /* GlobalClass+Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		9ABCDA181F07BB530020C66A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9ABCDA251F07BBDF0020C66A /* Model */,
+				9ABCDA191F07BB530020C66A /* NetworkConnection.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9ABCDA1C1F07BB800020C66A /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				9AFAD0AB1F08BBDB00689338 /* ListVC */,
+				9ABCDA1F1F07BB800020C66A /* WebView */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		9ABCDA1F1F07BB800020C66A /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				9ABCDA201F07BB800020C66A /* MyCell.swift */,
+				9ABCDA211F07BB800020C66A /* MyWebView.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		9ABCDA251F07BBDF0020C66A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9ABCDA261F07BBDF0020C66A /* qiitaApiModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9ABCDA3F1F07D35B0020C66A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9ABCDA401F07D35B0020C66A /* FavoriteEntity+CoreDataProperties.swift */,
+				9ABCDA411F07D35B0020C66A /* FavoriteEntity.swift */,
+				9ABCDA421F07D35B0020C66A /* Model.xcdatamodeld */,
+				9ABCDA471F07D37E0020C66A /* FavoriteDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9AE93E351EED76ED00A5C2C4 = {
+			isa = PBXGroup;
+			children = (
+				9AE93E401EED76ED00A5C2C4 /* swift_memo */,
+				9AE93E3F1EED76ED00A5C2C4 /* Products */,
+				9A5F69291EF54114007FA90A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AE93E3F1EED76ED00A5C2C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AE93E3E1EED76ED00A5C2C4 /* qiitaReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AE93E401EED76ED00A5C2C4 /* swift_memo */ = {
+			isa = PBXGroup;
+			children = (
+				9A7BFED51F0FDA6C009D8CDF /* Global */,
+				9ABCDA3F1F07D35B0020C66A /* CoreData */,
+				9ABCDA1C1F07BB800020C66A /* TabViews */,
+				9ABCDA181F07BB530020C66A /* Network */,
+				9AE93E411EED76ED00A5C2C4 /* AppDelegate.swift */,
+				9A5F69271EF53662007FA90A /* LoadingView.swift */,
+				9AE93E451EED76ED00A5C2C4 /* Main.storyboard */,
+				9AE93E481EED76ED00A5C2C4 /* Assets.xcassets */,
+				9AE93E4A1EED76EE00A5C2C4 /* LaunchScreen.storyboard */,
+				9A5F691C1EF5063D007FA90A /* Resouces */,
+				9AE93E4D1EED76EE00A5C2C4 /* Info.plist */,
+			);
+			path = swift_memo;
+			sourceTree = "<group>";
+		};
+		9AFAD0AB1F08BBDB00689338 /* ListVC */ = {
+			isa = PBXGroup;
+			children = (
+				9AFAD0B21F08BBED00689338 /* ListVC.swift */,
+				9AFAD0AE1F08BBDB00689338 /* Qiita */,
+				9AFAD0AC1F08BBDB00689338 /* favorite */,
+			);
+			path = ListVC;
+			sourceTree = "<group>";
+		};
+		9AFAD0AC1F08BBDB00689338 /* favorite */ = {
+			isa = PBXGroup;
+			children = (
+				9AFAD0AD1F08BBDB00689338 /* FavoriteListVC.swift */,
+			);
+			path = favorite;
+			sourceTree = "<group>";
+		};
+		9AFAD0AE1F08BBDB00689338 /* Qiita */ = {
+			isa = PBXGroup;
+			children = (
+				9AFAD0AF1F08BBDB00689338 /* QiitaListVC.swift */,
+			);
+			path = Qiita;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AE93E3D1EED76ED00A5C2C4 /* qiitaReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE93E501EED76EE00A5C2C4 /* Build configuration list for PBXNativeTarget "qiitaReader" */;
+			buildPhases = (
+				9AE93E3A1EED76ED00A5C2C4 /* Sources */,
+				9AE93E3B1EED76ED00A5C2C4 /* Frameworks */,
+				9AE93E3C1EED76ED00A5C2C4 /* Resources */,
+				9A5F692E1EF54131007FA90A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qiitaReader;
+			productName = swift_memo;
+			productReference = 9AE93E3E1EED76ED00A5C2C4 /* qiitaReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AE93E361EED76ED00A5C2C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "林 利樹";
+				TargetAttributes = {
+					9AE93E3D1EED76ED00A5C2C4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Y7M6ESVUDN;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9AE93E391EED76ED00A5C2C4 /* Build configuration list for PBXProject "qiitaReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AE93E351EED76ED00A5C2C4;
+			productRefGroup = 9AE93E3F1EED76ED00A5C2C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AE93E3D1EED76ED00A5C2C4 /* qiitaReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AE93E3C1EED76ED00A5C2C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5F691E1EF5063D007FA90A /* button-back.png in Resources */,
+				9AE93E4C1EED76EE00A5C2C4 /* LaunchScreen.storyboard in Resources */,
+				9AE93E491EED76ED00A5C2C4 /* Assets.xcassets in Resources */,
+				9AE93E471EED76ED00A5C2C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A5F692E1EF54131007FA90A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Ji.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AE93E3A1EED76ED00A5C2C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ABCDA241F07BB800020C66A /* MyWebView.swift in Sources */,
+				9AFAD0B31F08BBED00689338 /* ListVC.swift in Sources */,
+				9AFAD0B11F08BBDB00689338 /* QiitaListVC.swift in Sources */,
+				9A7BFEDA1F0FDB03009D8CDF /* GlobalClass+Alert.swift in Sources */,
+				9ABCDA1A1F07BB530020C66A /* NetworkConnection.swift in Sources */,
+				9ABCDA451F07D35B0020C66A /* FavoriteEntity.swift in Sources */,
+				9ABCDA441F07D35B0020C66A /* FavoriteEntity+CoreDataProperties.swift in Sources */,
+				9ABCDA231F07BB800020C66A /* MyCell.swift in Sources */,
+				9A7BFED81F0FDA8B009D8CDF /* GlobalClass.swift in Sources */,
+				9ABCDA271F07BBDF0020C66A /* qiitaApiModel.swift in Sources */,
+				9AE93E421EED76ED00A5C2C4 /* AppDelegate.swift in Sources */,
+				9ABCDA461F07D35B0020C66A /* Model.xcdatamodeld in Sources */,
+				9A5F69281EF53662007FA90A /* LoadingView.swift in Sources */,
+				9ABCDA481F07D37E0020C66A /* FavoriteDataManager.swift in Sources */,
+				9AFAD0B01F08BBDB00689338 /* FavoriteListVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9AE93E451EED76ED00A5C2C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE93E461EED76ED00A5C2C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AE93E4A1EED76EE00A5C2C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE93E4B1EED76EE00A5C2C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AE93E4E1EED76EE00A5C2C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AE93E4F1EED76EE00A5C2C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AE93E511EED76EE00A5C2C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y7M6ESVUDN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = swift_memo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zushio.swift-memo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9AE93E521EED76EE00A5C2C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y7M6ESVUDN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = swift_memo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "zushio.swift-memo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AE93E391EED76ED00A5C2C4 /* Build configuration list for PBXProject "qiitaReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE93E4E1EED76EE00A5C2C4 /* Debug */,
+				9AE93E4F1EED76EE00A5C2C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE93E501EED76EE00A5C2C4 /* Build configuration list for PBXNativeTarget "qiitaReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE93E511EED76EE00A5C2C4 /* Debug */,
+				9AE93E521EED76EE00A5C2C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9ABCDA421F07D35B0020C66A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9ABCDA431F07D35B0020C66A /* Model.xcdatamodel */,
+			);
+			currentVersion = 9ABCDA431F07D35B0020C66A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9AE93E361EED76ED00A5C2C4 /* Project object */;
+}

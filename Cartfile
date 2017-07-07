@@ -1,0 +1,3 @@
+github "Alamofire/Alamofire"
+github "SwiftyJSON/SwiftyJSON"
+github "honghaoz/Ji" >= 1.1.1
