@@ -9,17 +9,18 @@
 import Foundation
 import UIKit
 
-class QiitaListVC : ListVC{
+class QiitaListVC : ListVC, UISearchBarDelegate{
     
-    var apiUrl : String = "https://qiita.com/api/v2/items"
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
+        self.searchBar.enablesReturnKeyAutomatically = false;
         super.viewDidLoad()
         
     }
     
     override func reloadData() {
-        self.networkConnect.getArticles(modelType: .qiita, url: self.apiUrl) { (result) in
+        self.networkConnect.qiitaReqest(keyWard:self.searchBar.text!) { (result) in
             self.dataSouceDataArray = result as! Array<Any>
             self.tableView.reloadData()
             self.tableView.refreshControl?.endRefreshing()
@@ -36,5 +37,9 @@ class QiitaListVC : ListVC{
         return resultData.changeDic()
     }
 
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.view.endEditing(true)
+        self.reloadData()
+    }
     
 }

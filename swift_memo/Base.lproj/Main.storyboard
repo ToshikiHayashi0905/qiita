@@ -59,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OKO-1c-zQq">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="108" width="375" height="510"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="myCell" id="p77-Vx-M5B" customClass="MyCell" customModule="qiitaReader" customModuleProvider="target">
@@ -76,23 +76,37 @@
                                     <outlet property="delegate" destination="1MG-oy-Yqb" id="oc8-di-ZLY"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="FNK-KY-t8u">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bZB-a9-W3y"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1MG-oy-Yqb" id="7V2-7Z-Cbc"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.18681284785270691" green="0.78741532564163208" blue="0.08193274587392807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="FNK-KY-t8u" firstAttribute="top" secondItem="dcB-S2-l0j" secondAttribute="bottom" id="WFC-0U-bcw"/>
                             <constraint firstItem="OKO-1c-zQq" firstAttribute="leading" secondItem="MIn-3m-HYR" secondAttribute="leading" id="dUy-Yw-C74"/>
                             <constraint firstAttribute="trailing" secondItem="OKO-1c-zQq" secondAttribute="trailing" id="diG-o1-3Qf"/>
-                            <constraint firstItem="OKO-1c-zQq" firstAttribute="top" secondItem="dcB-S2-l0j" secondAttribute="bottom" id="eCz-zY-zlO"/>
+                            <constraint firstItem="FNK-KY-t8u" firstAttribute="leading" secondItem="MIn-3m-HYR" secondAttribute="leading" id="eSd-sF-c3o"/>
+                            <constraint firstItem="OKO-1c-zQq" firstAttribute="top" secondItem="FNK-KY-t8u" secondAttribute="bottom" id="g6T-hK-Yuo"/>
+                            <constraint firstAttribute="trailing" secondItem="FNK-KY-t8u" secondAttribute="trailing" id="su3-Jg-07s"/>
                             <constraint firstItem="d0M-cI-1ao" firstAttribute="top" secondItem="OKO-1c-zQq" secondAttribute="bottom" id="vMR-6V-Hil"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="QIITA" id="GfG-ht-EMZ"/>
                     <connections>
+                        <outlet property="searchBar" destination="FNK-KY-t8u" id="bBs-qd-o9Z"/>
                         <outlet property="tableView" destination="OKO-1c-zQq" id="JKY-d3-MNM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CV6-36-QPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226" y="-123"/>
+            <point key="canvasLocation" x="1224.8" y="-123.68815592203899"/>
         </scene>
         <!--favorite-->
         <scene sceneID="ANo-Pb-1Zn">

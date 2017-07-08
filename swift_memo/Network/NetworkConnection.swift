@@ -17,18 +17,16 @@ class NetworkConnection : NSObject {
         case qiita
     }
     
-    func getArticles(modelType : apiModel, url : String, completion: @escaping (_ resut : NSArray) -> Void) {
-        Alamofire.request(url, parameters: nil).responseJSON{ response in
-            if let dict = response.result.value as? Dictionary<String, AnyObject> {
-                print(dict)
-            }
-            
+    func getArticles(modelType: apiModel, param: Parameters, url: String, completion: @escaping (_ resut : NSArray) -> Void) {
+        Alamofire.request(url, parameters: param).responseJSON{ response in
+
             if let resultValue = response.result.value  {
                 let json = JSON(resultValue)
                 if (modelType == .qiita) {
                     completion(qiitaApiModel.collection(object:json ) as NSArray)
                 }
             }
+            
         }
     }
 }
