@@ -29,7 +29,11 @@ class qiitaApiModel : NSObject {
     }
     
     static func collection(object: JSON) -> [qiitaApiModel] {
-        return object.array!.map{ qiitaApiModel(object: $0) }
+        print(object["message"])
+        if let array = object.array {
+            return array.map{ qiitaApiModel(object: $0) }
+        }
+        return []
     }
     
     func changeDic() ->  Dictionary<String, String>{

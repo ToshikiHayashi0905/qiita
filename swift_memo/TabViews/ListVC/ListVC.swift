@@ -27,7 +27,7 @@ class ListVC : UIViewController ,UITableViewDelegate, UITableViewDataSource{
         
     }
     
-    
+    // MARK: tableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSouceDataArray.count
     }
@@ -52,6 +52,7 @@ class ListVC : UIViewController ,UITableViewDelegate, UITableViewDataSource{
         return nil
     }
     
+    // MARK: move
     func moveWebView(selectData: Dictionary<String, String>) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let mainVC = storyboard.instantiateViewController(withIdentifier: "MyWebView") as! MyWebView
@@ -61,6 +62,7 @@ class ListVC : UIViewController ,UITableViewDelegate, UITableViewDataSource{
         
     }
     
+    // MARK: override
     func reloadData() {}
     func getTitle(indexPath: IndexPath) -> String { return "" }
     func getSelectDataDic(indexPath: IndexPath) -> Dictionary<String,String> { return Dictionary() }

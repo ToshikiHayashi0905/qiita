@@ -21,6 +21,21 @@ class FavoriteListVC : ListVC{
         self.reloadData()
     }
     
+    // MARK: -
+    // MARK: tableViewDelegate
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            
+            GlobalClass.showAlertOkAndCancel(presentView: self, title: "削除", message: "このお気に入りを削除しますか？") { () in
+                if let selectData = self.dataSouceDataArray[indexPath.row] as? Dictionary<String, String> {
+                    FavoriteDataManager.sharedManager.deleteRecord(deleteRecordData:selectData)
+                    self.reloadData()
+                }
+            }
+        }
+    }
+    
+    // MARK: -
     override func reloadData() {
         self.dataSouceDataArray = FavoriteDataManager.sharedManager.roadlRecord().reversed()
         self.tableView.refreshControl?.endRefreshing()
@@ -28,6 +43,8 @@ class FavoriteListVC : ListVC{
         
     }
     
+    // MARK: -
+    // MARK: get
     override func getTitle( indexPath: IndexPath)  -> String{
         if let resultData : Dictionary<String,String> = self.dataSouceDataArray[indexPath.row] as? Dictionary<String, String>,
             let title = resultData["title"]{
@@ -42,15 +59,4 @@ class FavoriteListVC : ListVC{
         return resultData
     }
 
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            
-            GlobalClass.showAlertOkAndCancel(presentView: self, title: "削除", message: "このお気に入りを削除しますか？") { () in
-                if let selectData = self.dataSouceDataArray[indexPath.row] as? Dictionary<String, String> {
-                    FavoriteDataManager.sharedManager.deleteRecord(deleteRecordData:selectData)
-                    self.reloadData()
-                }
-            }
-        }
-    }
 }

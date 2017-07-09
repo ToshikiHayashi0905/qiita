@@ -31,15 +31,8 @@ class MyWebView: UIViewController ,UIWebViewDelegate{
         super.didReceiveMemoryWarning()
     }
     
-    public func open(urlString : String) {
-        
-        guard let url = URL(string: urlString) else { return }
-        let urlRequest = URLRequest(url: url)
-        
-        self.webView.loadRequest(urlRequest)
-    }
-
-    
+    // MARK: -
+    // MARK: action
     @IBAction func actionBackbutton(_ sender: UIBarButtonItem) {
         self.webView.goBack()
     }
@@ -56,6 +49,8 @@ class MyWebView: UIViewController ,UIWebViewDelegate{
         self.saveBookMark()
     }
     
+    // MARK: -
+    // MARK: webView
     func webViewDidStartLoad(_ webView: UIWebView) {
         self.activity.alpha = 1
         self.activity.startAnimating()
@@ -65,6 +60,16 @@ class MyWebView: UIViewController ,UIWebViewDelegate{
         self.activity.alpha = 0
         self.activity.stopAnimating()
     }
+    
+    // MARK: -
+    public func open(urlString : String) {
+        
+        guard let url = URL(string: urlString) else { return }
+        let urlRequest = URLRequest(url: url)
+        
+        self.webView.loadRequest(urlRequest)
+    }
+
     
     func saveBookMark() {
         

@@ -15,10 +15,13 @@ extension NetworkConnection  {
         return "https://qiita.com/api/v2/items"
     }
     
-    func qiitaReqest(keyWard: String, completion: @escaping (_ resut : NSArray) -> Void) {
+    func qiitaReqest(keyWard: String, page: UInt, completion: @escaping (_ resut : NSArray) -> Void) {
         var param : Parameters = Parameters()
         if (keyWard.utf16.count > 0) {
             param["query"] = keyWard
+        }
+        if (page > 0) {
+            param["per_page"] = String(page)
         }
         self.getArticles(modelType: .qiita, param: param, url: apiUrl, completion: completion)
     }
