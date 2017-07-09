@@ -24,10 +24,6 @@ class QiitaListVC : ListVC, UISearchBarDelegate{
     // MARK: scrollView
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        print("contentOffset", tableView.contentOffset)
-        print("size",tableView.frame.size.height)
-        print("contentSize",tableView.contentSize.height)
-        
         if tableView.contentOffset.y + tableView.frame.size.height > tableView.contentSize.height &&
             tableView.isDragging {
             
